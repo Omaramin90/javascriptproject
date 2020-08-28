@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head><Title>Please Help</title>
+
+
+</head>
+
+<body>
+
+
+<h1>Chapter 3 Question 7</h1>
+
+<p>Using the digitSum function as a model, define a function that takes a number and returns a number that contains the same digits
+  in the reverse order</p>
+
+<p>Display numbers</p>
+<p id="result" ></p>
+<script type="text/javascript">
+
+function digitSum(n){
+
+  var rev = n.toString().split('').reverse().join('');
+  return Math.sign(n) * parseInt(rev)
+
+
+}
+
+document.getElementById("result").innerHTML= digitSum(n=prompt("Enter a positive Integer:"))
+
+</script>
+
+</body>
+
+
+</html>

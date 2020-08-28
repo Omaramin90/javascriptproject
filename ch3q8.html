@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head><Title>Please Help</title>
+
+<script type="text/javascript">
+
+function digitalRoot(number) {
+   var sum = number
+   var arr = []
+   var reducer = (a,b) => parseInt(a) + parseInt(b)
+
+   while (sum > 9) {
+      arr = sum.toString().split("")
+      sum = arr.reduce(reducer)
+   }
+
+   console.log(sum)
+}
+
+digitalRoot(1729)
+
+</script>
+
+</head>
+
+<body>
+<h1>Chapter 3 Question 8</h1>
+<h2>The answer is in the console!</h2>
+
+<p>The digital root of an integer n is defined as the result of summing the digits repeatedly until only a single digit remains.
+  For example, the digital root of 1729 can be calculated using the following steps:
+Because the total at the end of step 3 is the single digit 1, that value is the digital root. Write a function digitalRoot that returns this value.</p>
+
+
+
+</body>
+
+
+</html>

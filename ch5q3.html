@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head><title>Practice</title>
+
+<script type="text/javascript">
+
+function consecutiveHead(number){
+
+  var possible_outcomes=['head','tail']
+
+  var found_consecutive_heads=false
+  var outcomes=[]
+  var counter= 0
+
+  while(found_consecutive_heads ==false){
+
+outcomes.push(possible_outcomes[Math.floor(Math.random()*possible_outcomes.length)])
+if(counter>2){
+  if(outcomes[counter]=='head' && outcomes[counter-1]=='head' && outcomes[counter-2]=='head')
+
+  found_consecutive_heads=true
+}
+
+counter++
+
+  }
+document.write('It took '+counter+ 'tosses to get 3 consecutive head')
+document.write("<br>"+outcomes)
+}
+
+consecutiveHead(3)
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

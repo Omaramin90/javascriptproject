@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head><Title>Please Help</title>
+
+<script type="text/javascript">
+
+function capitalize(){
+  var input = document.getElementById("input");
+  var x = document.getElementById("div");
+  var string = input.value;
+  x.innerHTML = string.charAt(0).toUpperCase() + string.slice(1);
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Chapter 7 Question 5</h1>
+
+<input id = "input" tyoe="text" name="input"/>
+<button onclick="capitalize()">
+  Click to capitalize
+</button>
+
+<h3 id = "div"></h3>
+
+<p>Implement a function capitalize(str) that returns a string in which the initial character is capitalized (if it is a letter) and all other
+  letters are converted to lower case; characters other than letters are not affected. For example, both capitalize("BOOLEAN")
+  and capitalize("boolean") should return the string "Boolean".</p>
+
+
+
+</body>
+
+
+</html>

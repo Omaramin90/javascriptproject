@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head><title>Practice</title>
+
+  <script type="text/javascript">
+
+  createIndexArray(n){
+
+    var arr= [0,1,2,3,4,5]
+
+    return n;
+
+  }
+  document.write(createIndexArray(3))
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head><Title>Please Help</title>
+
+<script type="text/javascript">
+
+function nextBiggest(arr) {
+  var max = -Infinity, result = -Infinity;
+
+  for (const value of arr) {
+    const nr = Number(value)
+
+    if (nr > max) {
+      [result, max] = [max, nr] // save previous max
+    } else if (nr < max && nr > result) {
+      result = nr; // new second biggest
+    }
+  }
+
+  return result;
+}
+
+const arr = ['20','120','111','215','54','78'];
+console.log(nextBiggest(arr));
+</script>
+
+</head>
+
+<body>
+<h1>Chapter 7 Question 21</h1>
+<h2>The answer is in the console!</h2>
+
+<p>Write a program that finds both the largest and the second-largest integer in a list, prior to the entry of the blank line that ends the input.</p>
+
+
+
+</body>
+
+
+</html>
